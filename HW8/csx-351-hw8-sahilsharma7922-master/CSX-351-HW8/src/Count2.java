@@ -29,15 +29,14 @@ public class Count
      *
      * @param n    The integer value to count up to,
      */
-    static int i=1;
     private static void countUp(int n)
     {
         // IMPLEMENT THIS RECURSIVE METHOD
-
+     static int i=1;
      if(n==0)
     	 return;
-     System.out.print(i++ +"\t" );
-     countUp(n-1);
+     System.out.print(i++ );
+     countUp(n--);
     }
     
     
@@ -52,7 +51,7 @@ public class Count
 if(n==0)
 	return;
 System.out.print(n+"\t");
-countDown(n-1);
+countDown(n--);
     }
     
     
